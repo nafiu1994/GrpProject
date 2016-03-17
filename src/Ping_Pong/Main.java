@@ -4,15 +4,18 @@
  * and open the template in the editor.
  */
 package Ping_Pong;
-import java.awt.*;
-import javax.swing.*;
+
+import java.awt.Graphics;
+
 /**
  *
  * @author Lawal Nafiu
  */
-public class Ball extends JPanel{
-    public void paintComponent(Graphics g){
+public class Main {
+    final static int LENGTH = 465;
+    final static int HEIGHT = 580;
+    public static void main(String [] args){
+        Window window = new Window(LENGTH, HEIGHT);
         
     }
-
 }

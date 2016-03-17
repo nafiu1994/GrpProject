@@ -4,18 +4,22 @@
  * and open the template in the editor.
  */
 package Ping_Pong;
-import javax.swing.JFrame;
+import javax.swing.*;
+import java.awt.Color;
 /**
  *
- * @author SIVLEK DNOMMAH
+ * @author Lawal Nafiu
  */
 public class Window extends JFrame{
-    public Window(int length, int breadth){
-    JFrame window = new JFrame();
-    window.setSize(breadth, length);
-    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    window.setVisible(true);
-    
-}
-    
+    Color bg = new Color(0x0ff);
+    public Window(int x, int y){
+        JFrame window = new JFrame();
+        window.setSize(x, y);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setLocation(100, 50);
+        window.setVisible(true);
+        Panel obstacles = new Panel();
+        window.add(this);
+        Animation ball = new Animation();
+    }
 }
